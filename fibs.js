@@ -1,4 +1,7 @@
 function fibs(n) {
+  if (n <= 0) {
+    return "Please enter a positive number";
+  }
   let fibArray = [];
   let first = 0;
   let second = 1;
@@ -16,4 +19,7 @@ function fibs(n) {
   return fibArray;
 }
 
-console.log(fibs(19));
+console.log(fibs(-3));
+console.log(fibs(0));
+console.log(fibs(8));
+console.log(fibs(30));
